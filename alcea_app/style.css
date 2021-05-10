@@ -1,0 +1,72 @@
+body {
+  background-color: pink;
+  margin: 0;
+}
+
+@font-face {
+    font-family: 'MontserratSemi';
+    src: url('fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('fonts/Montserrat-SemiBold.woff') format('woff'),
+        url('fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('fonts/Montserrat-Regular.woff') format('woff'),
+        url('fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MontserratBlack';
+    src: url('fonts/Montserrat-Black.woff2') format('woff2'),
+        url('fonts/Montserrat-Black.woff') format('woff'),
+        url('fonts/Montserrat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('fonts/Montserrat-Bold.woff') format('woff'),
+        url('fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.logoalcea {
+  width: 260px;
+  height: 340px;
+  background-image: url(img/logoalcea.png);
+  background-size: cover;
+}
+
+.titulohome {
+  font-family: MontserratBlack;
+}
+
+.acceso {
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  margin: 10px;
+}
+
+.login {
+  background-color: yellow;
+
+}
+
+.invitado {
+  background-color: white;
+
+}
