@@ -75,7 +75,7 @@
   .logo{
     max-width: 30%;
   }
-  
+
   .center {
     text-align: center;
   }
@@ -107,7 +107,7 @@
 
   .material-textfield {
     position: relative;
-    margin-top: 1.5rem;  
+    margin-top: 1.5rem;
   }
 
   .material-textfield label {
@@ -129,7 +129,7 @@
     font-size: 1rem;
     outline: none;
     border: 1px solid var(--lightGrey);
-    border-radius: 5px;  
+    border-radius: 5px;
     //padding: 1rem 0.7rem;
     padding-top: 1rem;
     padding-bottom: 0.7rem;
@@ -164,3 +164,7 @@
     background-color: var(--secondaryYellow) !important;
   }
 
+.prueba {
+  height: 20rem;
+  background-color: var(--secondaryYellow) !important;
+}
