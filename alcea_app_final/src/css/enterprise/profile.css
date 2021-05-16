@@ -1,0 +1,380 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+@import "../globals.css";
+
+html {
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body{
+    margin-left: 20% !important;
+    margin-right: 20% !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /*body{
+    margin-left: 20%;
+    margin-right: 20%;
+    }*/
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    body{
+      margin-left: 30% !important;
+      margin-right: 30% !important;
+    }
+  }
+
+.drawer {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  //padding-top: 60px;
+}
+
+.drawer a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--lightBlue);
+  display: block;
+  transition: 0.3s;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+  border-radius: 5px;
+}
+
+.drawer a:hover {
+  background-color: var(--lightBlueOpacity);
+}
+
+.sidenavSelected{
+  background-color: var(--lightBlueOpacity);
+}
+
+.drawer .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .drawer {padding-top: 15px;}
+  .drawer a {font-size: 18px;}
+}
+
+#avatar {
+  background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
+  width: 4rem;
+  height: 4rem;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 50%;
+}
+
+#username{
+  display: block;
+  padding-top: 1rem;
+  font-weight: bold !important;
+  color: var(--primaryBlue);
+  font-size: 1em;
+}
+
+#email{
+  display: block;
+  padding-top: 0.5rem;
+  color: black;
+}
+
+.drawerSeparator {
+  border: 1px solid var(--lightGrey);
+  margin-top: 1rem;
+}
+
+.navItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.appBar{
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.pageTitle{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.navHeader{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 2rem;
+}
+
+.navFooter{
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footerLogo{
+  width: 4rem;
+  height: auto;
+}
+
+/*----- TABS -----*/
+.tabs {
+  margin-top: 16px !important;
+  background-color: transparent !important;
+}
+
+.tabs .tab a{
+    color: var(--lightGrey) !important;
+    font-weight: bold !important;
+    font-size: 12px !important;
+}
+.tabs .tab a:hover,.tabs .tab a.active {
+  background-color:transparent !important;
+  color : var(--secondaryYellow) !important;
+}
+.tabs .tab.disabled a,.tabs .tab.disabled a:hover {
+  color: rgba(102,147,153,0.7) !important;
+}
+.tabs .indicator {
+  background-color: var(--secondaryYellow) !important;
+}
+
+/*----- END TABS -----*/
+
+#profileHeader{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.center{
+  justify-content: center;
+}
+
+.verticalSeparator {
+  border-left: 2px solid var(--lightBlue);
+  height: 20px;
+}
+
+.iconButtonContainer{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.cat_circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  /* new */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#iconSettings{
+  background-color: var(--accentBlue);
+}
+
+#iconEdit{
+  background-color: var(--secondaryYellow);
+}
+
+.profileActionIcons{
+  color: white;
+}
+
+#avatarContainer{
+  flex: 1;
+  align-items: center;
+}
+
+#avatar {
+  background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
+  width: 7rem;
+  height: 7rem;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 50%;
+}
+
+#userCounters{
+  flex: 1;
+  justify-content: center;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+#profileUsername{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primaryBlue);
+}
+
+#userLocation{
+  font-size: 12px;
+  color: var(--primaryBlue);
+}
+
+.infoLabel{
+  color: var(--mediumGrey);
+}
+
+#userPhone{
+  margin-top: 8px;
+}
+
+.counterStyle{
+  font-weight: bold;
+  color: var(--lightBlue);
+  flex: 1;
+}
+
+.counterNumber{
+  font-size: 20px;
+}
+
+.counterTitle{
+  font-size: 10px;
+}
+
+/*----- CARDS -----*/
+
+.card{
+  //box-shadow: 0 0 0 0 transparent !important;
+  //padding: 16px 16px;
+}
+
+.cardContent{
+  padding: 16px 16px;
+}
+
+.userInfo{
+  display: flex;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.listItemAvatar {
+  background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
+  width: 2rem;
+  height: 2rem;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 50%;
+}
+
+.listUsername{
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--secondaryYellow);
+}
+
+.listItemImage {
+  width: 100%;
+  height: auto;
+}
+
+.listTitle{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primaryBlue);
+}
+
+.listDescription{
+  color: var(--mediumGrey);
+}
+
+.cardActions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--accentBlue);
+  padding: 16px;
+}
+
+.actionContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.likeIconEnabled{
+  color: white;
+}
+
+.likeCounter {
+  font-weight: bold;
+  color: white;
+}
+
+.commentIcon{
+  color: white;
+}
+
+.commentCounter {
+  font-weight: bold;
+  color: white;
+}
+
+.btn-flat{
+  font-weight: bold !important;
+  color: white !important;
+}

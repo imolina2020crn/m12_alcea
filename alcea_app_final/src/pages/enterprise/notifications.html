@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- FAVICON -->
+	<link rel="icon" type="image/vnd.microsoft.icon" href="../../img/favicon/favicon.ico">
+
+	<title>Notifications</title>
+
+	<link rel="stylesheet" href="../../css/enterprise/notifications.css">
+	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../../js/enterprise/notifications.js"></script>
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+<body>
+	<div id="mySidenav" class="drawer">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		<!-- HEADER -->
+		<div class="navHeader">
+			<div id="avatar"></div>
+			<label id="username">John Doe</label>
+			<label id="email">ejemplo@mail.com</label>
+		</div>
+
+		<hr class="drawerSeparator">
+
+		<!-- MENU ITEMS -->
+		<a id="homeItem" href="home.html">
+			<div class="navItem">
+				<span class="material-icons md-36" >home</span>
+				<div style="width: 1rem"></div>
+				INICI
+			</div>
+		</a>
+		<a id="chatsItem" href="chats.html">
+			<div class="navItem">
+				<span class="material-icons md-36" >message</span>
+				<div style="width: 1rem"></div>
+				XATS
+			</div>
+		</a>
+		<a id="notificationsItem" href="notifications.html">
+			<div class="navItem">
+				<span class="material-icons md-36" >notifications</span>
+				<div style="width: 1rem"></div>
+				NOTIFICACIONS
+			</div>
+		</a>
+		<a id="profileItem" href="profile.html">
+			<div class="navItem">
+				<span class="material-icons md-36" >person</span>
+				<div style="width: 1rem"></div>
+				PERFIL
+			</div>
+		</a>
+
+		<!-- FOOTER -->
+		<div class="navFooter">
+			<img src="../img/logoalcea.png" class="footerLogo">
+		</div>
+
+	</div>
+
+	<!-- APPBAR -->
+	<div class="appBar">
+		<span class="pageTitle" onclick="openNav()">&#9776;	NOTIFICACIONS</span>
+	</div>
+
+	<!-- CONTENT -->
+	<div id="list" onclick="showChat();">
+		<div class="notificationItem">
+			<div class="listItemAvatar"></div>
+			<div class="column" style="flex: 1; padding-left: 16px;">
+				<div class="notificationText">Al <span class="spanStyle">Rubén López</span> li ha agradat el teu post</div>
+			</div>
+		</div>
+		<div class="notificationItem">
+			<div class="listItemAvatar"></div>
+			<div class="column" style="flex: 1; padding-left: 16px;">
+				<div class="notificationText">Al <span class="spanStyle">Rubén López</span> li ha agradat el teu post</div>
+			</div>
+		</div>
+		<div class="notificationItem">
+			<div class="listItemAvatar"></div>
+			<div class="column" style="flex: 1; padding-left: 16px;">
+				<div class="notificationText">Al <span class="spanStyle">Rubén López</span> li ha agradat el teu post</div>
+			</div>
+		</div>
+		<div class="notificationItem">
+			<div class="listItemAvatar"></div>
+			<div class="column" style="flex: 1; padding-left: 16px;">
+				<div class="notificationText">Al <span class="spanStyle">Rubén López</span> li ha agradat el teu post</div>
+			</div>
+		</div>
+		<div class="notificationItem">
+			<div class="listItemAvatar"></div>
+			<div class="column" style="flex: 1; padding-left: 16px;">
+				<div class="notificationText">Al <span class="spanStyle">Rubén López</span> li ha agradat el teu post</div>
+			</div>
+		</div>
+		<div class="notificationItem">
+			<div class="listItemAvatar"></div>
+			<div class="column" style="flex: 1; padding-left: 16px;">
+				<div class="notificationText">Al <span class="spanStyle">Rubén López</span> li ha agradat el teu post</div>
+			</div>
+		</div>
+		<div class="notificationItem">
+			<div class="listItemAvatar"></div>
+			<div class="column" style="flex: 1; padding-left: 16px;">
+				<div class="notificationText">Al <span class="spanStyle">Rubén López</span> li ha agradat el teu post</div>
+			</div>
+		</div>
+		<div class="notificationItem">
+			<div class="listItemAvatar"></div>
+			<div class="column" style="flex: 1; padding-left: 16px;">
+				<div class="notificationText">Al <span class="spanStyle">Rubén López</span> li ha agradat el teu post</div>
+			</div>
+		</div>
+		<div class="notificationItem">
+			<div class="listItemAvatar"></div>
+			<div class="column" style="flex: 1; padding-left: 16px;">
+				<div class="notificationText">Al <span class="spanStyle">Rubén López</span> li ha agradat el teu post</div>
+			</div>
+		</div>
+		<div class="notificationItem">
+			<div class="listItemAvatar"></div>
+			<div class="column" style="flex: 1; padding-left: 16px;">
+				<div class="notificationText">Al <span class="spanStyle">Rubén López</span> li ha agradat el teu post</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
