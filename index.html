@@ -18,31 +18,67 @@
     <style media="screen">
       li {
         display: block;
-        width: 10rem;
-        height: 10rem;
-        background-color: #FDC9F1;
-        float: left;
-        margin: 3rem 3rem;
+        width: 30rem;
+        height: 4rem;
+        background-color: #F9CA55;
+        margin: 0 auto;
         border-radius: 16rem;
-        border-style: hidden;
-        box-shadow: 0.625rem 0.438rem black;
         text-align: center;
-        line-height: 10rem;
+        line-height: 4rem;
         font-size: 1.6rem;
-        font-family: Montserrat;
-        color: #800080;
+        color: #193A66;
+        float: center;
+      }
+
+      .logo {
+        width: 20rem;
+        height: 20rem;
+        margin: 5rem auto;
+        background-image: url(img/icon.png);
+        background-size: cover;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 5rem;
+        color: #193A66;
       }
 
       body {
-        background-color: pink;
+        font-family: Montserrat;
       }
+
+      #web:hover {
+          color: #F9CA55;
+          background-color: #193A66;
+      }
+
+      #video:hover {
+          color: #F9CA55;
+          background-color: #193A66;
+      }
+
+      #apk:hover {
+          color: #F9CA55;
+          background-color: #193A66;
+      }
+
     </style>
   </head>
   <body>
+    <h1>alcea APP</h1>
     <div id="caixa">
     <ul>
-      <a href="alceaweb/index.html"><li id="a01">WEB</li></a>
+      <a href="alceaweb/index.html"><li id="web">Web</li></a>
     </ul>
-
+    <ul>
+      <a href="video/videoalcea.mp4"><li id="video">Video</li></a>
+    </ul>
+    <ul>
+      <a href="alceaweb/index.html"><li id="apk">APK</li></a>
+    </ul>
+  </div>
+    <div class="logo">
+    </div>
   </body>
 </html>
